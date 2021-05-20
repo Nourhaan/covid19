@@ -1,0 +1,42 @@
+<p style="color: #d7d7c1; margin:30px 20px;">Dashboard > </p>
+<div class="input-group search-form">
+  <div class="input-icons">
+    <i class="fa fa-search icon" style="font-size: 20px">
+    </i>
+    <input type="text" class="form-control rounded input-field" #country aria-label="Search" aria-describedby="search-addon"
+    />
+
+  </div>
+  <button type="button" style="background-color: #008080;color: #ebebe0;" (click)="search(country.value)" class="btn btn-outline-primary">Search</button>
+</div>
+
+<div class="row" style="margin: 50px; color: #00264d;" *ngIf="searchClicked">
+  <p class="info">
+    <b>Country</b>: {{searchRes!.country}}</p>
+  <p class="info">
+    <b>Active</b>: {{searchRes!.active}}</p>
+  <p class="info">
+    <b>Active Per One Million</b>: {{searchRes!.activePerOneMillion}}</p>
+  <p class="info">
+    <b>Cases</b>: {{searchRes!.cases}}</p>
+  <p class="info">
+    <b>Critical</b>: {{searchRes!.critical}}</p>
+  <p class="info">
+    <b>Recovered</b>: {{searchRes!.recovered}}</p>
+  <p class="info">
+    <b>Deaths</b>: {{searchRes!.deaths}}</p>
+  <p class="info" [hidden]="searchRes.deaths < 1000 ">
+    <span class="text-danger">
+      You should not travel to this country ! Deaths > 1000 
+    </span>
+  </p>
+
+  <p class="info" [hidden]="searchRes.deaths > 1000 ">
+    <span class="text-primary">
+      This Country is a Good option to travel to
+    </span>
+  </p>
+
+  
+</div>
+

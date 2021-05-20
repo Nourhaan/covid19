@@ -1,0 +1,30 @@
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 90%;
+    /* margin-bottom: 10px; */
+}
+  
+
+.icon {
+    padding: 10px;
+    color: #ebebe0;
+    min-width: 50px;
+    text-align: center;
+}
+.info{
+    font-size: 20px;
+}
+  
+.search-form{
+    margin-left:20px;
+}
+
+.input-field {
+    padding-left: 50px;  
+}
+  
+

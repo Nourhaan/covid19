@@ -1,0 +1,57 @@
+.menu-list{
+    margin-left: -20px;
+}
+.logo-img{
+    width: 50%; 
+    margin: 30px 0px 70px 10px;
+}
+.user-nav{
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    border-bottom: solid .2px #ebebe0;
+}
+.navbar-text{
+    padding-right:30px;
+}
+.icons{
+    font-size:24px; 
+}
+.fa-bell{
+    padding-right: 30px;
+}
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 90%;
+    /* margin-bottom: 10px; */
+}
+  
+.icon {
+    padding: 10px;
+    color: #ebebe0;
+    min-width: 50px;
+    text-align: center;
+}
+  
+.search-form{
+    margin-left:20px;
+}
+.active{
+    font-weight: bold;
+    
+}
+.active a {
+    color: white !important; 
+}
+.input-field {
+    padding-left: 50px;  
+}
+#sidebar{
+    height: 100%;
+    z-index: 1000;
+}
+
