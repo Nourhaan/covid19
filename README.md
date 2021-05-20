@@ -2,7 +2,8 @@
 
 This Project has 2 pages 
 1. Home Page which only contains Company's Logo
-2. Dashboard Page which allows the user to search for a country to get the Covid19 status and details in this country.
+2. Dashboard Page which allows The user to search for a country and then should be presented with information about the
+pandemic in this country (Like new cases, deaths, vaccinations, etc.)
 According to number of deaths, a Message will be shown to the user to tell him if he should travel or not (The user should not travel if number of deathes > 1000 ) 
 Try Inputs:
 - Mali --> the user can travel to Mali as number of deaths is 512
